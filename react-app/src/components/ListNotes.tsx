@@ -1,12 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {
-  List,
-  ListItem,
-  ListItemText,
-  Divider,
-  Grid,
-  Button,
-} from "@mui/material";
+import { List, ListItem, ListItemText, Divider, Grid } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import Note from "../customTypes/NoteInterface";
 import getNotesApi from "../externalApi/getNotesApi";

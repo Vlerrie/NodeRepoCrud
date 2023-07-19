@@ -1,10 +1,7 @@
-import React, { useState } from "react";
 import axios, { AxiosResponse } from "axios";
 import { Button } from "@mui/material";
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
 import Note from "../customTypes/NewNoteInterface";
-import Notes from "../customTypes/NoteInterface";
-import getNotesApi from "../externalApi/getNotesApi";
 import { publish } from "../eventHandler";
 
 const url = "http://localhost:8001/";
