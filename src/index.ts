@@ -9,8 +9,10 @@ const getNotes = require('./routes/getNotes');
 const createNote = require('./routes/createNote');
 const updateNote = require('./routes/updateNote');
 const deleteNote = require('./routes/deleteNote');
+const cors = require('cors')
 
 app.use(express.json());
+app.use(cors())
 
 app.get('/', async (req:Request, res:Response) => {
     res.send('Hello');

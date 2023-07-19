@@ -18,7 +18,9 @@ const getNotes = require('./routes/getNotes');
 const createNote = require('./routes/createNote');
 const updateNote = require('./routes/updateNote');
 const deleteNote = require('./routes/deleteNote');
+const cors = require('cors');
 app.use(express.json());
+app.use(cors());
 app.get('/', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     res.send('Hello');
 }));
