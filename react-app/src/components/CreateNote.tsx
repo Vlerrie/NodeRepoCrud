@@ -4,8 +4,6 @@ import { Button, FormControl, InputLabel, OutlinedInput } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Note from "../customTypes/NewNoteInterface";
-import Notes from "../customTypes/NoteInterface";
-import getNotesApi from "../externalApi/getNotesApi";
 import { publish } from "../eventHandler";
 
 const url = "http://localhost:8001/";
