@@ -22,16 +22,20 @@ var __importStar = (this && this.__importStar) || function (mod) {
     __setModuleDefault(result, mod);
     return result;
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-const reportWebVitals = (onPerfEntry) => {
-    if (onPerfEntry && onPerfEntry instanceof Function) {
-        Promise.resolve().then(() => __importStar(require('web-vitals'))).then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {
-            getCLS(onPerfEntry);
-            getFID(onPerfEntry);
-            getFCP(onPerfEntry);
-            getLCP(onPerfEntry);
-            getTTFB(onPerfEntry);
-        });
-    }
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
 };
-exports.default = reportWebVitals;
+Object.defineProperty(exports, "__esModule", { value: true });
+const React = __importStar(require("react"));
+const ReactDOM = __importStar(require("react-dom/client"));
+const CssBaseline_1 = __importDefault(require("@mui/material/CssBaseline"));
+const styles_1 = require("@mui/material/styles");
+const App_1 = __importDefault(require("./App"));
+const theme_1 = __importDefault(require("./theme"));
+const rootElement = document.getElementById('root');
+const root = ReactDOM.createRoot(rootElement);
+root.render(<styles_1.ThemeProvider theme={theme_1.default}>
+    {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
+    <CssBaseline_1.default />
+    <App_1.default />
+  </styles_1.ThemeProvider>);

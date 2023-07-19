@@ -10,4 +10,7 @@
     "strict": true,
     "skipLibCheck": true
   },
+  "include": [
+    "src"
+  ]
 }
